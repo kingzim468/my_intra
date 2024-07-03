@@ -17,7 +17,7 @@ spec:
         app: pro1
     spec:
       containers:
-        - image: 'kingzim/pro1:41'
+        - image: kingzim/pro1:42
           name: pro1-container
           ports:
             - containerPort: 9999
