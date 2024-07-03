@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pro1-deployment
+  namespace: default
   labels:
     app: pro1
 spec:
