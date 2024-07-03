@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pro1-container
-        image: kingzim/pro1:latest
+        image: kingzim/pro1:40
         ports:
         - containerPort: 80
