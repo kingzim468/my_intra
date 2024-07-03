@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pro1-deployment
+  labels:
+    app: pro1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pro1
+  template:
+    metadata:
+      labels:
+        app: pro1
+    spec:
+      containers:
+      - name: pro1-container
+        image: kingzim/pro1:latest
+        ports:
+        - containerPort: 80
