@@ -1,10 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pro1-deployment
-  namespace: default
   labels:
     app: pro1
+    app.kubernetes.io/instance: dev
+  name: pro1-deployment
+  namespace: default
 spec:
   replicas: 3
   selector:
@@ -16,7 +17,7 @@ spec:
         app: pro1
     spec:
       containers:
-      - name: pro1-container
-        image: kingzim/pro1:41
-        ports:
-        - containerPort: 9999
+        - image: 'kingzim/pro1:41'
+          name: pro1-container
+          ports:
+            - containerPort: 9999
