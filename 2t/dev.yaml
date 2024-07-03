@@ -1,10 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: pro1
   labels:
     app: pro1
-    app.kubernetes.io/instance: dev
-  name: pro1
   namespace: default
 spec:
   replicas: 3
