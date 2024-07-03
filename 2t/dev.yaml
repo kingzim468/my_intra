@@ -4,7 +4,7 @@ metadata:
   labels:
     app: pro1
     app.kubernetes.io/instance: dev
-  name: pro1-deployment
+  name: pro1
   namespace: default
 spec:
   replicas: 3
